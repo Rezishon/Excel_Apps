@@ -17,6 +17,13 @@ namespace ExcelFileCategorization
 
             // Get all Excel files in the specified directory
             string[] excelFiles = Directory.GetFiles(directoryPath, $"*{fileExtension}");
+
+            foreach (var excelFile in excelFiles)
+            {
+                using (var package = new ExcelPackage(new FileInfo(excelFile)))
+                {
+                }
+            }
         }
     }
 }
