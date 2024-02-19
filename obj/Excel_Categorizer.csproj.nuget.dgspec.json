@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "s:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj": {}
+    "S:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj": {}
   },
   "projects": {
-    "s:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj": {
+    "S:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "s:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj",
+        "projectUniqueName": "S:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj",
         "projectName": "Excel_Categorizer",
-        "projectPath": "s:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj",
+        "projectPath": "S:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj",
         "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
-        "outputPath": "s:\\Projects\\Excel_Categorizer\\obj\\",
+        "outputPath": "S:\\Projects\\Excel_Categorizer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
