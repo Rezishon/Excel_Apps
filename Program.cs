@@ -8,6 +8,7 @@ namespace ExcelFileCategorization
     {
         static void Main(string[] args)
         {
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
         }
     }
 }
