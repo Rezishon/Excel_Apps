@@ -12,6 +12,8 @@ namespace ExcelFileCategorization
 
             string directoryPath = @"S:\New folder (2)\"; // Specify your directory path
             string fileExtension = ".xlsx"; // Specify the file extension
+
+            ExcelPackage combinedData = new ExcelPackage();
         }
     }
 }
