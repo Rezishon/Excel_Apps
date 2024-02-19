@@ -14,6 +14,9 @@ namespace ExcelFileCategorization
             string fileExtension = ".xlsx"; // Specify the file extension
 
             ExcelPackage combinedData = new ExcelPackage();
+
+            // Get all Excel files in the specified directory
+            string[] excelFiles = Directory.GetFiles(directoryPath, $"*{fileExtension}");
         }
     }
 }
