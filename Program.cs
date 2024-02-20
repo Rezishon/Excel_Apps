@@ -50,6 +50,10 @@ namespace ExcelFileCategorization
                                     .Cells[1, col]
                                     .Value;
                             }
+                            // Copy the row data to the category worksheet
+                            for (int col = 1; col <= columnCount; col++)
+                            {
+                            }
                         }
                 }
             }
