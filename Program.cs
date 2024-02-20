@@ -30,6 +30,8 @@ namespace ExcelFileCategorization
                         // Read data from the Excel file
                         int rowCount = worksheet.Dimension.Rows;
                         int columnCount = worksheet.Dimension.Columns;
+
+                        Dictionary<string, int> pairs = new Dictionary<string, int>();
                 }
             }
             catch (System.Exception e)
