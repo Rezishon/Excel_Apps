@@ -9,6 +9,8 @@ namespace ExcelFileCategorization
         static void Main(string[] args)
         {
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+            try
+            {
 
             string directoryPath = @"S:\New folder (2)\"; // Specify your directory path
             string fileExtension = ".xlsx"; // Specify the file extension
@@ -28,6 +30,11 @@ namespace ExcelFileCategorization
                     int rowCount = worksheet.Dimension.Rows;
                     int columnCount = worksheet.Dimension.Columns;
                 }
+            }
+            catch (System.Exception e)
+            {
+                System.Console.WriteLine(e);
+                ;
             }
         }
     }
