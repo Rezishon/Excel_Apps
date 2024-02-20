@@ -21,11 +21,10 @@ namespace ExcelFileCategorization
                 // Get all Excel files in the specified directory
                 string[] excelFiles = Directory.GetFiles(directoryPath, $"*{fileExtension}");
 
-            foreach (var excelFile in excelFiles)
-            {
-                using (var package = new ExcelPackage(new FileInfo(excelFile)))
+                foreach (var excelFile in excelFiles)
                 {
-                    ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; // Assuming data is in the first sheet
+                    using (var package = new ExcelPackage(new FileInfo(excelFile)))
+                    {
 
                     // Read data from the Excel file
                     int rowCount = worksheet.Dimension.Rows;
