@@ -43,6 +43,10 @@ namespace ExcelFileCategorization
                             ExcelWorksheet categoryWorksheet =
                                 combinedData.Workbook.Worksheets[category]
                                 ?? combinedData.Workbook.Worksheets.Add(category);
+
+                            for (int col = 1; col <= columnCount; col++)
+                            {
+                            }
                         }
                 }
             }
