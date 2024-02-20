@@ -46,6 +46,9 @@ namespace ExcelFileCategorization
 
                             for (int col = 1; col <= columnCount; col++)
                             {
+                                categoryWorksheet.Cells[1, col].Value = worksheet
+                                    .Cells[1, col]
+                                    .Value;
                             }
                         }
                 }
