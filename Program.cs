@@ -68,6 +68,10 @@ namespace ExcelFileCategorization
                         }
                     }
                 }
+
+                // Save the combined data to a new Excel file
+                string outputFilePath = Path.Combine(directoryPath, "categorized_data.xlsx");
+                combinedData.SaveAs(new FileInfo(outputFilePath));
             }
             catch (System.Exception e)
             {
