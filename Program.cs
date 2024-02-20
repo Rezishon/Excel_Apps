@@ -27,9 +27,9 @@ namespace ExcelFileCategorization
                     {
                         ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; // Assuming data is in the first sheet
 
-                    // Read data from the Excel file
-                    int rowCount = worksheet.Dimension.Rows;
-                    int columnCount = worksheet.Dimension.Columns;
+                        // Read data from the Excel file
+                        int rowCount = worksheet.Dimension.Rows;
+                        int columnCount = worksheet.Dimension.Columns;
                 }
             }
             catch (System.Exception e)
