@@ -18,8 +18,8 @@ namespace ExcelFileCategorization
 
                 ExcelPackage combinedData = new ExcelPackage();
 
-            // Get all Excel files in the specified directory
-            string[] excelFiles = Directory.GetFiles(directoryPath, $"*{fileExtension}");
+                // Get all Excel files in the specified directory
+                string[] excelFiles = Directory.GetFiles(directoryPath, $"*{fileExtension}");
 
             foreach (var excelFile in excelFiles)
             {
