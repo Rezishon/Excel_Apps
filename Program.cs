@@ -38,6 +38,11 @@ namespace ExcelFileCategorization
                             // Assuming the category column is in the second column (change as needed)
                             string category = worksheet.Cells[row, 8].Text;
                             pairs.TryAdd(category, 2);
+
+                            // Create or get a worksheet for the category
+                            ExcelWorksheet categoryWorksheet =
+                                combinedData.Workbook.Worksheets[category]
+                                ?? combinedData.Workbook.Worksheets.Add(category);
                         }
                 }
             }
