@@ -8,9 +8,10 @@ namespace ExcelFileCategorization
     {
         static void Main(string[] args)
         {
-            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             try
             {
+                Console.Write("Working...");
+                ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
             string directoryPath = @"S:\New folder (2)\"; // Specify your directory path
             string fileExtension = ".xlsx"; // Specify the file extension
