@@ -55,6 +55,9 @@ namespace ExcelFileCategorization
                             {
                                 try
                                 {
+                                    categoryWorksheet.Cells[pairs[category], col].Value = worksheet
+                                        .Cells[row, col]
+                                        .Value;
                                 }
                                 catch (System.Exception e)
                                 {
