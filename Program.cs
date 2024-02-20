@@ -25,6 +25,7 @@ namespace ExcelFileCategorization
                 {
                     using (var package = new ExcelPackage(new FileInfo(excelFile)))
                     {
+                        ExcelWorksheet worksheet = package.Workbook.Worksheets[0]; // Assuming data is in the first sheet
 
                     // Read data from the Excel file
                     int rowCount = worksheet.Dimension.Rows;
