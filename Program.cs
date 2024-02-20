@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using OfficeOpenXml;
+using OfficeOpenXml.Export.ToDataTable;
 
 namespace ExcelFileCategorization
 {
