@@ -66,6 +66,7 @@ namespace ExcelFileCategorization
                             }
                             pairs[category]++;
                         }
+                    }
                 }
             }
             catch (System.Exception e)
