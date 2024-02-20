@@ -35,6 +35,8 @@ namespace ExcelFileCategorization
 
                         for (int row = 2; row <= rowCount; row++) // Assuming the first row is the header
                         {
+                            // Assuming the category column is in the second column (change as needed)
+                            string category = worksheet.Cells[row, 8].Text;
                         }
                 }
             }
