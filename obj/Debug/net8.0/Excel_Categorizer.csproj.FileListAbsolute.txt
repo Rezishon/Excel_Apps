@@ -32,3 +32,4 @@ S:\Projects\Excel_Categorizer\obj\Debug\net8.0\refint\Excel_Categorizer.dll
 S:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.pdb
 S:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.genruntimeconfig.cache
 S:\Projects\Excel_Categorizer\obj\Debug\net8.0\ref\Excel_Categorizer.dll
+s:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.sourcelink.json
