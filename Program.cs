@@ -32,6 +32,10 @@ namespace ExcelFileCategorization
                         int columnCount = worksheet.Dimension.Columns;
 
                         Dictionary<string, int> pairs = new Dictionary<string, int>();
+
+                        for (int row = 2; row <= rowCount; row++) // Assuming the first row is the header
+                        {
+                        }
                 }
             }
             catch (System.Exception e)
