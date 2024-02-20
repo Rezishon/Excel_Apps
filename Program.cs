@@ -64,6 +64,7 @@ namespace ExcelFileCategorization
                                     System.Console.WriteLine(e.Message);
                                 }
                             }
+                            pairs[category]++;
                         }
                 }
             }
