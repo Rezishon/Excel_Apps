@@ -84,7 +84,6 @@ namespace ExcelFileCategorization
             catch (System.Exception e)
             {
                 System.Console.WriteLine(e);
-                ;
             }
         }
     }
