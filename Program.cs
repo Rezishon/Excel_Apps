@@ -69,6 +69,7 @@ namespace ExcelFileCategorization
                             pairs[category]++;
                         }
                     }
+                    System.Console.WriteLine(excelFile[6..] + " Done");
                 }
 
                 // Save the combined data to a new Excel file
@@ -80,6 +81,7 @@ namespace ExcelFileCategorization
                     $"Categorized data saved to {outputFilePath}\nPress any key to exit"
                 );
                 Console.ReadKey();
+                Console.Beep();
             }
             catch (System.Exception e)
             {
