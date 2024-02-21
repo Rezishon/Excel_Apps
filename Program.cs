@@ -11,7 +11,7 @@ namespace ExcelFileCategorization
         {
             try
             {
-                Console.Write("Working...");
+                Console.WriteLine("Following files are appended to categorized Excel file:");
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
                 string directoryPath = @"..\..\"; // Specify your directory path
