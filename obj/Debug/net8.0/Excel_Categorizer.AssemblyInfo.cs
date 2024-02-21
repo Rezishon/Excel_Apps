@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Excel_Categorizer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+145bd1f4420257b25b52d27b764c6888c1666c20")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31afab25fdce43225fac29110d5c1005874e0e89")]
 [assembly: System.Reflection.AssemblyProductAttribute("Excel_Categorizer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Excel_Categorizer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aZRUt83hbbZ7kriGDO8gkKw/5miysFZewlDqPlydaMDRbUBCxPcJ/tBPTsNZi6pbkErYjSEt8jdoPTWcRsZFUw==",
+  "dgSpecHash": "/JKADAepfUwrgvgpyN2tJVb5YC2LLAamKeqU4gk4CkprlFOSHlNkSPD2O/sqEP4hQxHs3yxJ+5zrKpqvEyy9mw==",
   "success": true,
   "projectFilePath": "S:\\Projects\\Excel_Categorizer\\Excel_Categorizer.csproj",
   "expectedPackageFiles": [
@@ -17,9 +17,12 @@
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.0\\microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Reza\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\Reza\\.nuget\\packages\\spectre.console.cli\\0.48.0\\spectre.console.cli.0.48.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
+    "C:\\Users\\Reza\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.text.encoding.codepages\\8.0.0\\system.text.encoding.codepages.8.0.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",

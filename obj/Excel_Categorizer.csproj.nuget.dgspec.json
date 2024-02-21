@@ -48,6 +48,14 @@
             "EPPlus": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Spectre.Console": {
+              "target": "Package",
+              "version": "[0.48.0, )"
+            },
+            "Spectre.Console.Cli": {
+              "target": "Package",
+              "version": "[0.48.0, )"
             }
           },
           "imports": [
