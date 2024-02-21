@@ -14,7 +14,7 @@ The **Excel File Categorizer** is a sleek app that helps you organize your Excel
 
 ## How to Use
 
-1. **Install Dependencies**: Make sure you have **.NET Core 8** installed. (Don't worry, we won't ask you to install pandas-eating snakes.)
+1. **Install Dependencies**: Make sure you have **.NET Runtime 8** installed.
 
 2. **Run the App**: Execute the `ExcelFileCategorizer.exe` file. It's as easy as double-clicking on a freshly compiled binary. 🚀
 
@@ -22,8 +22,8 @@ The **Excel File Categorizer** is a sleek app that helps you organize your Excel
 
 ## Example Usage
 
-```bash
-$ ./ExcelFileCategorizer.exe
+```powershell
+$ .\Excel_Categorizer\bin\Debug\net8.0> .\ExcelFileCategorizer.exe
 # Follow the prompts to select your files and set the categorization rules.
 # Voilà! Your categorized result file is ready.
 ```
