@@ -115,11 +115,7 @@ namespace ExcelFileCategorization
                 string outputFilePath = Path.Combine(directoryPath, "categorized_data.xlsx");
                 combinedData.SaveAs(new FileInfo(outputFilePath));
 
-                Console.Clear();
-                Console.WriteLine(
-                    $"Categorized data saved to {outputFilePath}\nPress any key to exit"
                 );
-                Console.ReadKey();
                 Console.Beep();
             }
             catch (System.Exception e)
