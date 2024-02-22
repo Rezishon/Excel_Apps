@@ -119,6 +119,11 @@ namespace ExcelFileCategorization
                 AnsiConsole.Write(
                     new FigletText("Excel Categorizer").Centered().Color(Color.Purple)
                 );
+
+                var rule2 = new Rule("[italic yellow]Categorized file saved to:[/]");
+                rule2.LeftJustified();
+                AnsiConsole.Write(rule2);
+
                 Console.Beep();
             }
             catch (System.Exception e)
