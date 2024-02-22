@@ -115,6 +115,9 @@ namespace ExcelFileCategorization
                 string outputFilePath = Path.Combine(directoryPath, "categorized_data.xlsx");
                 combinedData.SaveAs(new FileInfo(outputFilePath));
 
+                AnsiConsole.Clear();
+                AnsiConsole.Write(
+                    new FigletText("Excel Categorizer").Centered().Color(Color.Purple)
                 );
                 Console.Beep();
             }
