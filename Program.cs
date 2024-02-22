@@ -58,13 +58,35 @@ namespace ExcelFileCategorization
                                 ?? combinedData.Workbook.Worksheets.Add(category);
 
                             for (int col = 1; col <= columnCount; col++)
+                    // AnsiConsole.MarkupLine($"[bold]{Regex.Match(excelFile, @"\w*\W*.xls.$")}[/]");
+                    AnsiConsole
+                        .Progress()
+                        .AutoRefresh(true)
+                        .AutoClear(false) // Do not remove the task list when done
+                        .HideCompleted(false) // Hide tasks as they are completed
+                        .Columns(
+                            new ProgressColumn[]
                             {
                                 categoryWorksheet.Cells[1, col].Value = worksheet
                                     .Cells[1, col]
                                     .Value;
+                                new TaskDescriptionColumn(), // Task description
+                                new ProgressBarColumn(), // Progress bar
+                                new PercentageColumn(), // Percentage
+                                new RemainingTimeColumn(), // Remaining time
+                                new SpinnerColumn(), // Spinner
                             }
                             // Copy the row data to the category worksheet
                             for (int col = 1; col <= columnCount; col++)
+                        )
+                        .Start(ctx =>
+                        {
+                            // Define tasks
+                            var task1 = ctx.AddTask(
+                                $"[bold]{Regex.Match(excelFile, @"\w*\W*.xls.$")}[/]"
+                            );
+
+                            while (!ctx.IsFinished)
                             {
                                 try
                                 {
@@ -73,6 +95,7 @@ namespace ExcelFileCategorization
                                         .Value;
                                 }
                                 catch (System.Exception e)
+                                task1.Increment(25);
                                 {
                                     System.Console.WriteLine(e.Message);
                                 }
@@ -81,6 +104,7 @@ namespace ExcelFileCategorization
                         }
                     }
                     System.Console.WriteLine(excelFile[6..] + " Done");
+                        });
                 }
 
                 // Save the combined data to a new Excel file
