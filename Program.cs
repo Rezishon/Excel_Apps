@@ -125,6 +125,11 @@ namespace ExcelFileCategorization
                 AnsiConsole.Write(rule2);
 
                 Console.Beep();
+
+                AnsiConsole.Markup(
+                    $"[italic bold]{outputFilePath}[/]\n\n[underline]Press any key to exit[/]"
+                );
+                Console.ReadKey();
             }
             catch (System.Exception e)
             {
