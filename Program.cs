@@ -13,7 +13,16 @@ namespace ExcelFileCategorization
         {
             try
             {
-                Console.WriteLine("Following files are appended to categorized Excel file:");
+                AnsiConsole.Write(
+                    new FigletText("Excel Categorizer").Centered().Color(Color.Purple)
+                );
+
+                var rule = new Rule(
+                    "[italic blue]Following files are appended to categorized Excel file:[/]"
+                );
+                rule.LeftJustified();
+                AnsiConsole.Write(rule);
+
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
                 string directoryPath = @"..\..\"; // Specify your directory path
