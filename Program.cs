@@ -108,10 +108,6 @@ namespace ExcelFileCategorization
                                     }
                                 }
                             }
-                            pairs[category]++;
-                        }
-                    }
-                    System.Console.WriteLine(excelFile[6..] + " Done");
                         });
                 }
 
