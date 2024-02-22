@@ -33,3 +33,8 @@ S:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.pdb
 S:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.genruntimeconfig.cache
 S:\Projects\Excel_Categorizer\obj\Debug\net8.0\ref\Excel_Categorizer.dll
 s:\Projects\Excel_Categorizer\obj\Debug\net8.0\Excel_Categorizer.sourcelink.json
+s:\Projects\Excel_Categorizer\bin\Debug\net8.0\Spectre.Console.dll
+s:\Projects\Excel_Categorizer\bin\Debug\net8.0\Spectre.Console.Cli.dll
+s:\Projects\Excel_Categorizer\bin\Debug\net8.0\de\Spectre.Console.Cli.resources.dll
+s:\Projects\Excel_Categorizer\bin\Debug\net8.0\fr\Spectre.Console.Cli.resources.dll
+s:\Projects\Excel_Categorizer\bin\Debug\net8.0\sv\Spectre.Console.Cli.resources.dll
