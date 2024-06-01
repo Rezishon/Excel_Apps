@@ -39,4 +39,4 @@ This project is licensed under the **GPLv3 License**. Feel free to use, modify, 
 
 *Made with ❤️ by Rezishon*
 
-Got questions? Reach out to me at RezaShahmoradi.81@outlook.com. Let's make Excel organization cool again! 😎.
+Got questions? Reach out to me at RezaShahmoradi.81@outlook.com. Let's make Excel organization cool again! 😎
