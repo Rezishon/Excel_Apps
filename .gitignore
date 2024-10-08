@@ -3,3 +3,7 @@ obj/project.nuget.cache
 obj/Excel_Categorizer.csproj.nuget.dgspec.json
 obj/Debug/net8.0/Excel_Categorizer.AssemblyInfoInputs.cache
 obj/Debug/net8.0/Excel_Categorizer.AssemblyInfo.cs
+Excel_To_SqlQ/bin
+Excel_To_SqlQ/obj
+Excel_To_SqlQ/all1.xlsx
+.gitignore
