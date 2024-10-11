@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excel_To_SqlQ", "Excel_To_SqlQ.csproj", "{7CD29893-05E5-4655-863A-6E7FF0D7DBA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CD29893-05E5-4655-863A-6E7FF0D7DBA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CD29893-05E5-4655-863A-6E7FF0D7DBA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CD29893-05E5-4655-863A-6E7FF0D7DBA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CD29893-05E5-4655-863A-6E7FF0D7DBA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDC31463-6414-4501-8233-E5620A1D2A4C}
+	EndGlobalSection
+EndGlobal
