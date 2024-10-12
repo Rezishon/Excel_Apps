@@ -8,6 +8,9 @@ class Program
     {
         using var workbook = new XLWorkbook("./all1.xlsx");
         var worksheet = workbook.Worksheet(1);
+
+        Processes processes = new Processes(worksheet, "Costumer");
+
     }
 }
 
