@@ -6,6 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        using var workbook = new XLWorkbook("./all1.xlsx");
     }
 }
