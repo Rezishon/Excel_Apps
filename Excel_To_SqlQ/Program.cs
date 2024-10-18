@@ -63,6 +63,50 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
         Query.Remove(Query.Length - 2, 2);
         Query.Append($")\nVALUES (");
 
+        // bool flag = false;
+        // for (int i = 0; i < RowsData.Count ; i++)
+        // {
+        //     Query.Append(RowsData[i]);
+        //     // RowsData.Remove(RowsData[i]);
+
+        //     Query.Append(',');
+        //     // File.WriteAllText("/home/rezishon/Projects/Excel_Apps/Excel_To_SqlQ/newfile.txt", Query.ToString(), Encoding.Default);
+        //     Console.WriteLine(Query);
+        //     if (IsRTL(RowsData[i]) && flag == false)
+        //     {
+        //         RowsData.Reverse();
+        //         flag = true;
+        //     }
+        //     // i--;
+        // }
+        // RowsData.Reverse();
+        foreach (var data in RowsData)
+        {
+            // if (IsRTL(data) || flag == true)
+            // {
+            //     // Query.Append(data.Reverse().ToString());
+            //     flag = true;
+            //     // break;
+            // }
+            // else
+            // {
+                Query.Append(data);
+                Query.Append(',');
+                Console.WriteLine(Query);
+            // }
+            // RowsData.Remove(data);
+
+            // File.WriteAllText("/home/rezishon/Projects/Excel_Apps/Excel_To_SqlQ/newfile.txt", Query.ToString(), Encoding.Default);
+
+        }
+        Query.Remove(Query.Length - 2, 2);
+        Query.Append($");");
+
+        Console.WriteLine(Query);
+        // File.WriteAllText("/home/rezishon/Projects/Excel_Apps/Excel_To_SqlQ/newfile.txt", Query.ToString());
+
+        // Query writer
+    }
 
     public bool IsRTL(string text)
     {
