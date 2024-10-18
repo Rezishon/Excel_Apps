@@ -23,6 +23,7 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
     public void Luncher()
     {
         HeaderFounder();
+        DataFounder();
     }
 
     public void HeaderFounder()
@@ -32,6 +33,20 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
             Headers.Add(cell.Value.ToString());
         };
         Worksheet.Row(1).Delete();
+    }
+    public void DataFounder()
+    {
+        foreach (var row in worksheet.Rows())
+        {
+            foreach (var cell in row.Cells())
+            {
+                RowsData.Add(cell.Value.ToString());
+            }
+
+            Combiner();
+            RowsData.Clear();
+
+        }
     }
     }
 }
