@@ -1,0 +1,2 @@
+INSERT INTO Costumer (StartCity, StartCityCode, ProductName, Weight, Money, Barnamehcode, CompName, CompCode)
+VALUES (sdgd,21310000,مرغ (غير زنده),20000,
