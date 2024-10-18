@@ -83,22 +83,16 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
         // RowsData.Reverse();
         foreach (var data in RowsData)
         {
-            // if (IsRTL(data) || flag == true)
-            // {
-            //     // Query.Append(data.Reverse().ToString());
-            //     flag = true;
-            //     // break;
-            // }
-            // else
-            // {
                 Query.Append(data);
                 Query.Append(',');
                 Console.WriteLine(Query);
-            // }
-            // RowsData.Remove(data);
-
-            // File.WriteAllText("/home/rezishon/Projects/Excel_Apps/Excel_To_SqlQ/newfile.txt", Query.ToString(), Encoding.Default);
-
+                if (IsRTL(data))
+                {
+                    Query.Append("0123");
+                    Console.WriteLine(Query);
+                    Query.Replace("0123", "");
+                    Console.WriteLine(Query);
+                }
         }
         Query.Remove(Query.Length - 2, 2);
         Query.Append($");");
