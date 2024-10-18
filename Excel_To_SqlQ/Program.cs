@@ -81,9 +81,11 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
         //     // i--;
         // }
         // RowsData.Reverse();
+        // Query.Append(string.Join(", ",RowsData));
         foreach (var data in RowsData)
         {
                 Query.Append(data);
+                Console.WriteLine(Query);
                 Query.Append(',');
                 Console.WriteLine(Query);
                 if (IsRTL(data))
