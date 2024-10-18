@@ -63,5 +63,16 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
         Query.Remove(Query.Length - 2, 2);
         Query.Append($")\nVALUES (");
 
+
+    public bool IsRTL(string text)
+    {
+        foreach (char c in text)
+        {
+            if (c >= '\u0600' && c <= '\u06ff')
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
