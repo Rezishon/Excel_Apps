@@ -61,5 +61,7 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
             Query.Append($"{header}, ");
         }
         Query.Remove(Query.Length - 2, 2);
+        Query.Append($")\nVALUES (");
+
     }
 }
