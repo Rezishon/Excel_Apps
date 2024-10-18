@@ -48,5 +48,8 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
 
         }
     }
+
+    public void Combiner()
+    {
     }
 }
