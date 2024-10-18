@@ -56,5 +56,10 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
     {
         StringBuilder Query = new StringBuilder();
         Query.Append($"INSERT INTO {TableName} (");
+        foreach (var header in Headers)
+        {
+            Query.Append($"{header}, ");
+        }
+        Query.Remove(Query.Length - 2, 2);
     }
 }
