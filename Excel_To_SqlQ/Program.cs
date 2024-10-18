@@ -6,11 +6,14 @@ class Program
 {
     static void Main(string[] args)
     {
+        // These should be changed in future: - Excel file path - Worksheet number - Table name -
         using var workbook = new XLWorkbook("./all1.xlsx");
+        // Access the worksheet you want to read from
         var worksheet = workbook.Worksheet(1);
 
         Processes processes = new Processes(worksheet, "Costumer");
 
+        processes.Luncher();
     }
 }
 
