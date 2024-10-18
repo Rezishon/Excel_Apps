@@ -95,6 +95,7 @@ internal class Processes(IXLWorksheet worksheet, string TableName)
                     Query.Replace("0123", "");
                     Console.WriteLine(Query);
                 }
+                // add an english char to the next data 
         }
         Query.Remove(Query.Length - 2, 2);
         Query.Append($");");
