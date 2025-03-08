@@ -35,5 +35,13 @@ class Program
         int mainFileRowCount = mainWorksheet.Dimension.Rows;
 
         #endregion
+
+        #region Result file init
+
+        using var newPackage = new ExcelPackage();
+        var newWorksheet = newPackage.Workbook.Worksheets.Add(resultFileSheetName);
+        int newWorksheetColumn = 1;
+
+        #endregion
     }
 }
