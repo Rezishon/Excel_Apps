@@ -68,5 +68,21 @@ class Program
         }
 
         #endregion
+
+        #region Save result file
+
+        // Replace Old file if exist
+        if (File.Exists(resultFilePath))
+        {
+            File.Copy(resultFilePath, $"{resultFilePath}.del");
+            File.Delete(resultFilePath);
+        }
+
+        // Save the result file (the new file)
+        var fileInfo = new FileInfo(resultFilePath);
+        newPackage.SaveAs(fileInfo);
+
+        #endregion
+
     }
 }
