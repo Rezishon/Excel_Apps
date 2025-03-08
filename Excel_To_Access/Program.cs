@@ -20,5 +20,11 @@ class Program
         };
 
         #endregion
+
+        #region EPPLUS config
+
+        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+        #endregion
     }
 }
