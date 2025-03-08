@@ -26,5 +26,14 @@ class Program
         ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
         #endregion
+
+        #region Main file init
+
+        using var mainPackage = new ExcelPackage(new FileInfo(mainFilePath));
+        var mainWorksheet = mainPackage.Workbook.Worksheets[0];
+        int mainFileColumnCount = mainWorksheet.Dimension.Columns;
+        int mainFileRowCount = mainWorksheet.Dimension.Rows;
+
+        #endregion
     }
 }
