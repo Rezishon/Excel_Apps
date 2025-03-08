@@ -6,4 +6,6 @@ obj/Debug/net8.0/Excel_Categorizer.AssemblyInfo.cs
 Excel_To_SqlQ/bin
 Excel_To_SqlQ/obj
 Excel_To_SqlQ/all1.xlsx
+Excel_To_Access/bin
+Excel_To_Access/obj
 .gitignore
