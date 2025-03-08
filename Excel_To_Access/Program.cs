@@ -43,5 +43,30 @@ class Program
         int newWorksheetColumn = 1;
 
         #endregion
+
+        #region New file building
+
+        // Loops over columns
+        for (int column = 1; column <= mainFileColumnCount; column++)
+        {
+            // Finding specific columns base on app setting
+            if (knownColumn.ContainsKey(mainWorksheet.Cells[1, column].GetCellValue<string>() ?? string.Empty))
+            {
+
+                // Set result file header
+                newWorksheet.Cells[1, newWorksheetColumn].Value = knownColumn[mainWorksheet.Cells[1, column].GetCellValue<string>()];
+
+                // Set result file rows for each column
+                for (int row = 2; row <= mainFileRowCount; row++)
+                {
+                    newWorksheet.Cells[row, newWorksheetColumn].Value = mainWorksheet.Cells[row, column].Value;
+                }
+
+                // Move result file column to the next one
+                newWorksheetColumn++;
+            }
+        }
+
+        #endregion
     }
 }
